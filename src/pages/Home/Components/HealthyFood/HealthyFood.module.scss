@@ -1,0 +1,70 @@
+.wrapper{
+    width: 100%;
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title{
+    color: rgb(46,46,46);
+    font-family: var(--font-poppin);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    position: relative;
+    margin: 0;
+    &::before{
+        content:"";
+        border-radius: 0.5rem;
+        width: 8rem;
+        height: 0.25rem;
+        position: absolute;
+        left: 0;
+        bottom: -0.5rem;
+        background-color: #ea580c;
+    }
+}
+
+.overflow-row{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    
+    div{
+        display: flex;
+        background-color: rgb(253,186,116);
+        border-radius: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+    }
+    overflow: hidden;
+}
+
+
+.text-white {
+    color: rgb(255,255,255);
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.food-list{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 3rem 0;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+

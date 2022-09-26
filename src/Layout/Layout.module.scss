@@ -1,0 +1,28 @@
+.wrapper{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(245,243,243,1);
+    position: relative;
+}
+.content{
+    margin-top: 5rem;
+}
+
+.pd {
+    padding: 0.75rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .pd {
+        padding: 1rem 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content{
+        margin-top: 3.5rem;
+    }
+}
