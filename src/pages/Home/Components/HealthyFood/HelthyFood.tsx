@@ -60,7 +60,7 @@ function HealthyFood() {
   );
 }
 function LeftArrow() {
-  const { isFirstItemVisible, scrollPrev } = useContext(VisibilityContext);
+  const { scrollPrev } = useContext(VisibilityContext);
 
   return (
     <div
@@ -74,7 +74,7 @@ function LeftArrow() {
 }
 
 function RightArrow() {
-  const { isLastItemVisible, scrollNext } = useContext(VisibilityContext);
+  const { scrollNext } = useContext(VisibilityContext);
 
   return (
     <div

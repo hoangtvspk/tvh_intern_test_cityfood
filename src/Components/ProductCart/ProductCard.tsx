@@ -5,7 +5,6 @@ import { FoodModel } from "../../Models/FoodModel";
 import styles from "./ProductCard.module.scss";
 import { updateCartData } from "../../redux/slices/cartSlice";
 import { useDispatch } from "react-redux";
-// import { useDispatch, useSelector } from "react-redux";
 
 const cx = classNames.bind(styles);
 
@@ -16,11 +15,7 @@ interface BestSellerCardProps {
 
 const ProductCard = ({ food, category }: BestSellerCardProps) => {
   const dispatch = useDispatch();
-
-  // const cartItems = useSelector((state: any) => state.cartSlice.cartItems);
-
   const [imageLoading, setImageLoading] = useState(true);
-  const [itemIndex, setItemIndex] = useState(0);
 
   const HandleAddCartClick = (food: FoodModel) => {
     const cartList = JSON.parse(
@@ -29,18 +24,6 @@ const ProductCard = ({ food, category }: BestSellerCardProps) => {
     const ProductExist = cartList.find(
       (item) => item.food.name === food.name
     ) as CartItemModel;
-    console.log(ProductExist);
-    console.log(
-      cartList.map((item) =>
-        item.food.name === food.name
-          ? {
-              ...ProductExist,
-              quantity: ProductExist.quantity + 1,
-              totalPrice: ProductExist.quantity * item.food.price,
-            }
-          : item
-      )
-    );
     if (!!ProductExist) {
       dispatch(
         updateCartData(

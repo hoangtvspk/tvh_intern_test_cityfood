@@ -35,7 +35,7 @@ function Home() {
           <button className={cx("btn-order")}>Order Now</button>
         </div>
         <div className={cx("best-seller")}>
-          <img src={Hero} />
+          <img alt="" src={Hero} />
           <div>
             {BestSellerList.length > 0 &&
               BestSellerList.map((food: FoodModel, index) => (

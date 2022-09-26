@@ -1,7 +1,5 @@
-import React from "react";
-import logo from "./logo.svg";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import { BrowserRouter, Routes } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import MyRoutes from "./Router/config";
 

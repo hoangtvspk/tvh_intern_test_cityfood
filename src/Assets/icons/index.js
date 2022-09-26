@@ -1,4 +1,4 @@
-export const CartIcon = ({}) => {
+export const CartIcon = () => {
   const HandleCartClick = () => {
     const cartLayout = document.getElementById("cart-layout");
     cartLayout.style.right = "40px";
